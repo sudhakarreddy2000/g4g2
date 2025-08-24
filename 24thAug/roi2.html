@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Variables</h1>
+    <script>
+        let prn=prompt("enter principal amount");
+        let roi=prompt("Enter rate of interest");
+        let result=prn*roi/100;
+
+        //document.write("Interest amount is <span>"+result+"</span>")
+        document.write("<span>"+roi+"</span>% rate of interest for <span>"+prn+"</span> is <span>"+result+"</span>")
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+https://github.com/sudhakarreddy2000/g4g2
+
+2nd Aug:
+=======
+website:
+=======
+website is a collection of webpages.
+which contains information.
+information in the form of text, graphics, images, videos and audio
+
+Browser:
+=======
+Browser is a application/software, which is used to connect to websites
+
+Home page:
+==========
+It is a first page / landing page of a website.
+Home page name always should be 'index'
+
+	1) Domain name registration
+		ex: Sudhakar.com/net/in/org/edu
+	2) Server space / hosting
+		2gb / 3gb 
+	3) Designing / Development
+
+10th Aug:
+Session-1
+=======
+Welcome to first session of MernStack
+
+HTML5:
+Hyper Text Markup Language
+
+We use html for developing web applications.
+
+What is required to create webapplication/ Where you write html code and execute it
+	1) Text Editor
+		ex: Notepad, Visual studio code
+	2) Browser
+
+html file has to be saved as .html
+
+html contains TAGS
+	<title> </title>
+
+Tags are 2 types
+	1) Opening Tag
+		<title>
+	2) Closing Tag
+		</title>
+
+<br> ==>break
+<hr> ==>Horizontal ruler
+
+ATTRIBUTES:
+It is used to provide additional information about a tag.
+Attributes are used in opening of html
+
+hr tag attributes
+<hr color="red" size="10px" width="400px" align="left/center/right">
+
+body tag attribute:
+
+	<body bgcolor="yellow">
+
+	</body>
+
+HTML headings:
+============
+<h1> to <h6> tags are used for defining html headings
+<h1> </h1>  =>big size
+<h2> </h2>
+.
+.
+.
+<h6> </h6> ==>small size
+
+Attributes for headings:
+	align="left/center/right"
+
+Paragraph:
+=========
+<p> </p>
+
+List items:
+=========
+List items are 2 types
+	Order list item
+		<ol> </ol>
+
+	UnOrder list item
+		<ul> </ul>
+
+Hyperlinks:
+=========
+<a href="file.html"> goto file </a>
+a=>anchor
+href=>hyper reference
+
+Tables:
+======
+Tables are used to organize web content
+Tables contains rows and columns
+
+<table> </table>
+<tr> </tr>  =>table row
+<td> </td> =>table data
+<th> </th> =>table head
+
+FORMS:
+========
+<form> </form>
+<input type="text/password/checkbox/radio/submit/reset/email/color/date/range">
+
+Session 2
+16th Aug:
+=========
+<textarea> </textarea>
+<select>
+<option> </option>
+</select>
+
+CSS3
+Cascading Style Sheets
+
+
+Why:
+CSS saves time − You can write CSS once and then reuse same sheet in multiple HTML pages. You can define a style for each HTML element and apply it to as many Web pages as you want.
+
+Pages load faster − If you are using CSS, you do not need to write HTML tag attributes every time. Just write one CSS rule of a tag and apply it to all the occurrences of that tag. So less code means faster download times.
+
+Easy maintenance − To make a global change, simply change the style, and all elements in all the web pages will be updated automatically.
+
+Superior styles to HTML − CSS has a much wider array of attributes than HTML, so you can give a far better look to your HTML page in comparison to HTML attributes.
+
+Multiple Device Compatibility − Style sheets allow content to be optimized for more than one type of device. By using the same HTML document, different versions of a website can be presented for handheld devices such as PDAs and cell phones or for printing.
+
+Global web standards − Now HTML attributes are being deprecated and it is being recommended to use CSS. So its a good idea to start using CSS in all the HTML pages to make them compatible to future browsers.
+
+Css can be written in 3 ways:
+Internal css
+External css
+Inline css
+
+<h1> </h1>
+
+syntax of css:
+	selector{
+		property:value;
+	}
+
+	ex:
+		h3{
+			color:red;
+		}
+
+
+Different types of selectors:
+====================
+1) Tag/Element Selector
+2) Class Selector
+3) Id Selector
+4) pseudo selector
+5) compound selector
+
+Properties:
+-------------
+color:red;
+text-align:left/center/right;
+font-size:16px;/ 1em;
+font-family:arial;
+background-color:yellow;
+
+comments in css:
+----------------------------
+// single line comment
+/*
+multi
+line
+comment
+*/
+
+border:1px solid/dotted/dashed red;
+width:300px;
+height:300px;
+
+background-image:url(pic.jpg/gif/png);
+background-repeat:no-repeat/repeat-x/repeat-y;
+
+Spaces:
+
+margin ==>margin is a outside space of an element
+padding ==>padding is inside space of an element
+
+margin:30px;
+padding:30px;
+text-decoration:none;
+
+============
+divisions:
+=======
+<div> </div> ==>division tag
+
+CLASS SELECTOR:
+===============
+	class selector starts with dot(.);
+	we need to call the class to any element
+		.txt{
+			color:green;
+			}
+
+	<h3 class="txt"> </h3>
+
+
+
+17th Aug:
+Session 3
+========
+float:left/right;
+clear:left/right/both;
+line-height:80px;
+
+ID SELECTOR:
+============
+	#txt{
+
+		}
+
+	<h3 id="txt"> </h3>
+
+Uniqueness (ID):
+An id attribute is designed to uniquely identify a single element within an entire HTML document. Each id value must be unique on a given page.
+
+Reusability (Class):
+A class attribute can be applied to multiple HTML elements, allowing for the application of the same styles or behaviors to a group of elements. An element can also have multiple classes assigned to it.
+
+FLEX BOX MODEL:
+===============
+CSS Flexible Box Layout, commonly known as Flexbox, is a one-dimensional CSS layout model designed for arranging items in rows or columns. 
+
+It provides an efficient way to lay out, align, and distribute space among items within a container, making it easier to create flexible and responsive designs without relying on floats or positioning.
+
+display:flex;   ==>give this property to parent element
+justify-content:flex-start / flex-end /center / space-around /space-between;  =>horizontal alignment
+align-items:flex-start / flex-end / center; ==>vertical alignment
+
+RESPONSIVE DESIGNING:
+======================
+Responsive web design is a web development approach where a website's layout and content adapt to various screen sizes and devices, ensuring a consistent and user-friendly experience across desktops, tablets, and smartphones.
+
+Media queries:
+=============
+Media queries are a feature of CSS3 that allow web developers to create responsive web designs. They enable the application of different CSS styles based on various device characteristics, such as screen size, resolution, orientation, and media type. 
+
+@media screen and (max-width:999px){
+
+}
+
+
+23rd Aug:
+========
+Session4
+Bootstrap:
+Bootstrap is a framework of css:
+
+
+getbootstrap.com
+
+
+text/typography classes:
+=====================
+.text-danger
+.text-success
+.text-warning
+.text-dark
+.text-primary
+.text-info
+.text-light
+.text-primary-emphasis
+
+background colors:
+======================
+bg-danger
+bg-success
+bg-warning
+bg-primary
+bg-dark
+bg-light
+.bg-primary-subtle
+
+button classes:
+============
+<input type="submit">
+<input type="reset">
+<button> </button>
+
+.btn
+.btn-primary
+.btn-danger
+.btn-success
+.btn-warning
+etc
+
+Img class:
+========
+.img-fluid
+
+
+JAVASCRIPT:
+===========
+Javascript is used for Dynamic web pages
+Javascript is used for Interactive web pages
+Javascript is used for client side validation
+
+
+javascript is case sensitive
+
+document.write(" ");
+
+
+double quotes should not be used inside double quotes
+single quotes should not be used inside single quotes
+
+popup messages
+	alert() =>used to display alert messages
+	prompt() =>used to take input values
+	confirm() =>for confimation
+
+24th Aug
+=======
+Session-5.
+
+Comments
+// Single line comment
+/* multi line comment */
+
+Variables:
+===========
+variables are containers, which can store some data values.
+in js variables can be declared with 3 keywords
+	1) var keyword
+	2) let keyword
+	3) const keyword
+
+
+CONCATINATION:
+we use + for String concatination
+String concatenation in JavaScript refers to the process of combining two or more strings into a single, new string. 
+
+	var str1="javascript is "
+	var str2="Dynamic"
+	document.write(str1)
+	document.write(str2)
+
+	document.write(str1 + str2);
+
+	2% rate of interest for 50000 is 1000
+
+functions:
+=======
+functions are block of code which can be used for reusability.
+functions are basically 2 types
+	1) in built function
+			ex:Date()
+	2) user defined function
+			ex:sudhakar()
+
+Date methods:
+============
+getHours()
+getMinutes()
+getSeconds()
+getDate()
+getMonth()
+getFullYear()
+getDay()
+
+if you want to use these methods we need to create date object
+	
+		new Date(); ==>creation of a object
+
+
+if else :
+======
+syntax:
+
+	if(condition){
+	statement
+	}else{
+	statement
+	}
+
+marks
+
+Operators:
+=========
+Operators are symbols 
+ex: +, -,&
+
+1)Arithmatic operator
+	+,-,%,/,*
+2) Assignment operator
+	=,+=,-=,*=,/=
+3) conditional operator
+	<=,>=,!=,==,===
+4) Logical operators
+	&& , ||
+
+
+
+
+
