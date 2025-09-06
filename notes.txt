@@ -555,3 +555,97 @@ Fulfilled: The operation completed successfully.
 Regular expressions:
 In JavaScript, a regular expression (RegExp) is an object that defines a search pattern for text. 
 It is used to perform powerful pattern-matching, search-and-replace functions on strings. 
+
+6th Sept
+8th Session:
+
+React
+React is library of javascript
+React can be used to develop single-page, mobile, or server-rendered applications . Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality.
+
+=>REact is component based app
+=>React is used for single page application
+=>React will have features of routing
+=>React is SEO friendly
+=>React is easy to learn if you javascript knowledge
+=>React is used by many comanies
+
+INSTALLING REACT:
+	=>Node should be installation
+		=>to check node version=>at cmd =>node -v
+	=>if not showing version, then install node from
+	https://nodejs.org/en/download/
+
+	=>Creating React App:
+	=>create a folder(react) and open in cmd
+	=>npm create vite@latest appname
+
+Folder Structure:
+	appname (folder)
+	      	Node_modules(folder)
+	     	Public(folder)
+			vite.svg
+	      	src(folder)
+			assets(folder)
+			App.css
+			App.jsx
+			index.css
+			main.jsx
+		index.html
+
+JSX:
+JSX, which stands for JavaScript XML or JavaScript Syntax Extension, is a syntax extension for JavaScript used in React to describe the user interface. It allows developers to write HTML-like markup directly within JavaScript code. 
+HTML is static
+jsx(looks like html) =>dynamic
+
+To start working on react:
+	1) delete all files from src folder except 'main.jsx'
+	2) delete entire code from 'main.jsx'
+======================
+Using multiple jsx elements:
+	1)Wrapping in div tag
+		<div>
+			jsx element
+			jsx element
+		</div>
+	2)Wrapping in  [ ]
+		[
+			jsx element
+			jsx element
+		]
+
+	3) Wrapping <>
+		<>
+		jsx element
+		jsx element
+		</>
+
+Expression:
+Expressions enable the display of dynamic content, such as variables, data from state or props, and results of calculations.
+for expression we use { }
+	ex: 20+20
+
+Using variables and calling variable:
+
+Css:
+	1)inline css=><h1 style="color:red;"></h1>
+		in react(jsx) => <h1 style={{color:'red'}}>Hello </h1>
+	2)external css
+	3)internal css
+
+Inserting images in jsx:
+==================
+<img src="pic.jpg">
+if image from 'public' folder, we can use above code
+
+otherwise, if it is from 'src' folder, it has to be imported
+	import pic from './flower.jpg'
+we can include in jsx with expression
+		<img src={pic} />
+
+
+
+
+
+
+
