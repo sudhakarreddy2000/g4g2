@@ -610,11 +610,11 @@ Using multiple jsx elements:
 		</div>
 	2)Wrapping in  [ ]
 		[
-			jsx element
+			jsx element,
 			jsx element
 		]
 
-	3) Wrapping <>
+	3) Wrapping <>(fragment)
 		<>
 		jsx element
 		jsx element
@@ -644,8 +644,56 @@ we can include in jsx with expression
 		<img src={pic} />
 
 
+7th Sept:
+9th Session
+	inline css
+	internal
+		<head>
+		<style>
 
+		</style>
+		</head>
 
+	external
+		html==>abc.html
+		css file=>xyz.css
+
+<head>
+<link href="xyz.css" rel="stylesheet">
+</head>
+
+in react:
+	under src folder =>create one css file
+	then
+	import xyz.css
+========================
+importing and exporting data
+
+==========
+COMPONENTS:
+In React, a component is a fundamental building block of a user interface (UI). 
+It is an independent, reusable piece of code that defines a specific part of your application's UI and its associated logic.
+
+Components are 2 types:
+	1)Function components
+
+	2)Class component
+
+function component:
+================
+	1) create a new file
+		ex: Comp1.jsx
+		export component=>export default Comp1
+	2) then import to main.jsx
+		import Comp1 from './Comp1'
+	3) include in jsx
+		<Comp1/>
+
+	*Component name should start with Capital letter
+
+PROPS:
+=======
+In React, "props" (short for properties) are a mechanism for passing data from a parent component to a child component. They are a fundamental concept in React development, enabling the creation of reusable and dynamic components.
 
 
 
