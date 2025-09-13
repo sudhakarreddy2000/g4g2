@@ -695,5 +695,89 @@ PROPS:
 =======
 In React, "props" (short for properties) are a mechanism for passing data from a parent component to a child component. They are a fundamental concept in React development, enabling the creation of reusable and dynamic components.
 
+13th Sept:
+=========
+hooks:
+Hooks are part function components, it is not used in class components.
+
+Hooks are functions that allow functional React components to manage state and side effects. They were introduced in React 16.8, enabling developers to use state and other React features without writing class components.
+
+state==>data or information
+
+There are different types of hooks are there in react.
+	1) useState() hook
+	2) useEffect() hook
+	3) useMemo() hook
+	4) useContext() hook
+	5) useRef() hook
+	etc.
+
+useState() hook:
+useState() hook is used to manage the state of function component.
+The useState hook is a fundamental part of React that enables functional components to manage state. 
+
+Purpose:
+It allows functional components to have state variables, which can change over time and trigger re-renders of the component.
+
+How it works:
+useState is a function that you call within a functional component. 
+It accepts a single argument: the initial value of the state variable. 
+		useState('react')
+It returns an array containing two elements:
+The current state value.
+A function to update the state value.
+	const [state, setState]=useState('react')
+
+
+=>import useState
+		import {useState} from 'react'
+====================
+functions in react
+events in react
+	onclick event ==>js
+	onClick event ==>in react
+
+function Test(){
+	setState("slkjdf");
+}
+
+
+
+	useState()
+	events
+
+
+bootstrap:
+
+=>in react, we need install bootstrap
+	npm i bootstrap
+=>it will be available in Node_modules folder
+	node_modules/bootstrap/dist/css/bootstrap.css
+=>if you want to use bootstrap import
+	import '../node_modules/bootstrap/dist/css/bootstrap.css'
+===================
+map() method:
+The map() method in React is a fundamental JavaScript array method used extensively for rendering lists of dynamic content. It is not a React-specific feature but a standard JavaScript function that works seamlessly within React components.
+
+Iterating over Data:
+map() is used to iterate over an array of data, such as an array of objects or strings, that you want to display in your UI.
+
+let users=['Raana','Jagdish','Anil','Sunil']
+
+ {state.map((item)=><li>{item}</li>)}
+
+
+
+
+
+
+
+
+
+
+prop drilling:
+=========
+Prop drilling in React refers to the process of passing data down through multiple levels of components. This occurs when a parent component needs to share data with a deeply nested child component, requiring the data to be passed through intermediate components that don't actually use it themselves. 
+
 
 
