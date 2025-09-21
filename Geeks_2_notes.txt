@@ -871,16 +871,81 @@ Example of boostrap columns with card:
 </div>
 </div>
 
-
-
-
-
-
-
-
+=============
+21st Sept:
+=============
 prop drilling:
 =========
 Prop drilling in React refers to the process of passing data down through multiple levels of components. This occurs when a parent component needs to share data with a deeply nested child component, requiring the data to be passed through intermediate components that don't actually use it themselves. 
 
+context:
+=======
+React Context is an API that allows for sharing state and data across a component tree without the need to explicitly pass props down through every level of nesting. This approach is particularly useful for "global" data, such as:
+User authentication status: Whether a user is logged in or out.
+Theme preferences: Light mode or dark mode settings.
+Language preferences: The currently selected language for the application.
+
+How React Context Works:
+----------------------------------------
+Creating a Context: A context is created using createContext() from React. This function can optionally take a default value.
+
+    import { createContext } from 'react';
+    export const MyContext = createContext('default value');
+
+Providing the Context:
+---------------------------------
+ A Provider component, derived from the created context, is used to wrap the part of the component tree that needs access to the context's value. 
+The Provider accepts a value prop, which is the data or state to be shared.
+	<MyContext.Provider value={sharedData}>
+          {/* Child components that need access to sharedData */}
+        </MyContext.Provider>
+
+Consuming the Context: 
+-------------------------------
+Components that need to access the shared data use the useContext Hook. This hook takes the context object as an argument and returns the current value of that context.
+const data = useContext(MyContext);
+
+it is alternative to prop drilling.
+in prop drilling we need to pass data from each and every component. whereas using context data can be passed directly to component.
+
+routing
+======
+React applications utilize routing to manage navigation between different views or "pages" within a single-page application (SPA).
+
+ Since React itself focuses on UI components and does not provide built-in routing, external libraries are used, with React Router being the most popular and widely adopted solution.
+
+Here's a breakdown of key aspects of React routing with React Router:
+
+Purpose: React Router enables SPAs to have multiple distinct views, mimicking a multi-page website without full page reloads. It manages URL changes, browser history, and renders specific components based on the current URL.
+
+Installation: To use React Router, install the react-router-dom package:
+
+    npm install react-router-dom
+
+
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/contact">Contact</a>
+
+  <Link to="/">Home</Link>
+  <Link to="/about">About</Link>
+  <Link to="/contact">Contact</Link>
+
+
+CONTROLLED COMPONENTS / CONTROLLED FORMS:
+=============================================
+In React, a controlled component is a form input element (like <input>, <textarea>, or <select>) whose value is entirely controlled by React state. This means that the input's value is bound to a state variable, and any changes to the input are managed by updating that state.
+
+State Management: The input element's value is stored in a React component's state (using useState hook in functional components or this.state in class components).
+
+Value Prop: The value prop of the input element is set to the state variable. This ensures that the input's displayed value always reflects the current state.
+
+Event Handling: An onChange event handler is attached to the input element. When the user types or interacts with the input, this handler is triggered.
+
+State Update: Inside the onChange handler, the component's state is updated with the new value from the input. This causes a re-render of the component, and the input's value prop is updated, reflecting the change.
+
+
+filter() method
+includes() method
 
 
